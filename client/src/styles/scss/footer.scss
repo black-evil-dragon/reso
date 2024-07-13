@@ -1,0 +1,12 @@
+.footer {
+    &__wrapper {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item {
+        margin: 5px;
+    }
+}

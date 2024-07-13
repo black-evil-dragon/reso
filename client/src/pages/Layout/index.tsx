@@ -1,18 +1,25 @@
 import React from 'react';
-
-import Components from '#components';
 import { Outlet } from 'react-router-dom';
+
+
+import Header from '#components/Header';
+import Footer from '#components/Footer';
+
+import '#styles/scss/index.scss'
 
 function Layout() {
     return (
-        <>
-            <Components.Header />
+        <>  
+            {/* App header component */}
+            <Header />
 
-            Layout
 
+            {/* App content */}
             <Outlet />
 
-            <Components.Footer />
+
+            {/* App footer component */}
+            {/* <Footer /> */}
         </>
     );
 }

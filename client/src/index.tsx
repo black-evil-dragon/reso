@@ -12,16 +12,17 @@ import NoPage from '#pages/NoPage';
 ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 ).render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route path="" element={<Index />} />
-                    <Route path="test" element={<Test />} />
-                    <Route path="*" element={<NoPage />} />
-                </Route>
-                
-            </Routes>
-        </BrowserRouter>
-    </React.StrictMode>
+// <root>
+        <React.StrictMode>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Layout />}>
+                        <Route path="" element={<Index />} />
+                        <Route path="test" element={<Test />} />
+                        <Route path="*" element={<NoPage />} />
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </React.StrictMode>
+// </root>
 );
