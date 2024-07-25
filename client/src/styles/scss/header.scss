@@ -2,11 +2,19 @@
     &__wrapper {
 
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
 
     &__item {
         margin: 5px;
+    }
+
+    &__logo {
+        
+        img {
+            padding: 20px;
+            height: 45px;
+        }
     }
 }
